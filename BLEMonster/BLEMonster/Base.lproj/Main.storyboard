@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BLEMonster" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ctz-bA-No9">
+                                <rect key="frame" x="170" y="48" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="pushStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gKC-Lq-I5p"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BigMouse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8P-oe-CRG">
+                                <rect key="frame" x="149" y="20" width="76.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0U-vP-Ehc">
+                                <rect key="frame" x="127" y="124" width="120" height="30"/>
+                                <state key="normal" title="Receive Message"/>
+                                <connections>
+                                    <action selector="pushReceiveMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jsI-IY-V6x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEL-dG-3rX">
+                                <rect key="frame" x="171" y="162" width="32" height="30"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="pushStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kwd-85-Abf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2S-aP-UZw">
+                                <rect key="frame" x="137" y="86" width="101" height="30"/>
+                                <state key="normal" title="Send Message"/>
+                                <connections>
+                                    <action selector="pushSendMessage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vdt-wX-iLh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ctz-bA-No9" firstAttribute="top" secondItem="P8P-oe-CRG" secondAttribute="bottom" constant="7.5" id="1k0-3f-dBX"/>
+                            <constraint firstItem="P8P-oe-CRG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="2WI-JE-Gkp"/>
+                            <constraint firstItem="b0U-vP-Ehc" firstAttribute="top" secondItem="G2S-aP-UZw" secondAttribute="bottom" constant="8" id="Dgt-Ub-mWI"/>
+                            <constraint firstItem="G2S-aP-UZw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S7r-3n-bBu"/>
+                            <constraint firstItem="G2S-aP-UZw" firstAttribute="top" secondItem="Ctz-bA-No9" secondAttribute="bottom" constant="8" id="Tlp-ig-3w1"/>
+                            <constraint firstItem="b0U-vP-Ehc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZzV-qc-qVC"/>
+                            <constraint firstItem="OEL-dG-3rX" firstAttribute="top" secondItem="b0U-vP-Ehc" secondAttribute="bottom" constant="8" id="hxW-Ci-2oX"/>
+                            <constraint firstItem="OEL-dG-3rX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="idX-DM-08w"/>
+                            <constraint firstItem="P8P-oe-CRG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yFj-oX-CYS"/>
+                            <constraint firstItem="Ctz-bA-No9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zJX-7w-NWL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="receiveMessageButton" destination="b0U-vP-Ehc" id="YYD-f9-WSb"/>
+                        <outlet property="sendMessageButton" destination="G2S-aP-UZw" id="P8l-eY-znG"/>
+                        <outlet property="startButton" destination="Ctz-bA-No9" id="l8G-tB-Roe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
